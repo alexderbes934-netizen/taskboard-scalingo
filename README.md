@@ -49,6 +49,13 @@ Ouvrir `http://localhost:5173`. La documentation API est disponible sur `http://
 
 Créer deux applications (API et client) dans la même région, puis l'addon PostgreSQL Starter 512 sur l'API. Chaque application pointe vers le même dépôt GitHub, avec `PROJECT_DIR=api` ou `PROJECT_DIR=client`.
 
+Déploiement réalisé :
+
+- Dépôt : https://github.com/alexderbes934-netizen/taskboard-scalingo
+- Client : https://taskboard-client-alexy.osc-fr1.scalingo.io/
+- API : https://taskboard-api-alexy.osc-fr1.scalingo.io
+- Documentation API : https://taskboard-api-alexy.osc-fr1.scalingo.io/docs
+
 ### API
 
 - Buildpack Python ; version fixée dans `api/.python-version`.
@@ -64,10 +71,10 @@ Créer deux applications (API et client) dans la même région, puis l'addon Pos
 
 ### Coût et ressources
 
-Le sujet Ynov donne un plafond indicatif de 50 €/mois et recommande des conteneurs taille S avec un addon PostgreSQL Starter 512. Au tarif public actuel en région standard, deux conteneurs S (7,20 € chacun) et PostgreSQL Starter 512 (7,20 €) représentent environ **21,60 € HT par mois** (environ **25,92 € TTC** si une TVA française de 20 % s'applique). Le calcul suppose les trois ressources actives 30 jours, sans stockage excédentaire ni option supplémentaire ; Scalingo facture à la minute. Vérifier le solde et les conditions du voucher avant provisionnement.
+Le sujet Ynov donne un plafond indicatif de 50 €/mois et recommande des conteneurs taille S avec un addon PostgreSQL Starter 512. Les deux applications utilisent chacune un conteneur S et l'API dispose de PostgreSQL Starter 512. Au tarif public en région standard, ces ressources représentent environ **21,60 € HT par mois** (environ **25,92 € TTC** si une TVA française de 20 % s'applique). Le calcul suppose les trois ressources actives 30 jours, sans stockage excédentaire ni option supplémentaire ; Scalingo facture à la minute. Le voucher est activé sur le compte, avec un plafond mensuel indiqué de 50 €.
 
-- Estimation mensuelle : 21,60 € HT, à confirmer dans le simulateur avant création.
-- Coût réel : à relever dans Billing après déploiement.
+- Estimation mensuelle de la configuration déployée : 21,60 € HT, soit environ 25,92 € TTC.
+- Montant exact consommé : à relever dans Billing, car la facturation dépend de la durée réelle d'utilisation.
 
 ## CI
 
