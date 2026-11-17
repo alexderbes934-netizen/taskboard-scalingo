@@ -37,7 +37,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: ruff check .
       - run: alembic upgrade head
-      - run: pytest
+      - run: python -m pytest
 
   client:
     runs-on: ubuntu-latest
