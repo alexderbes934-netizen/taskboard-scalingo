@@ -64,9 +64,9 @@ Créer deux applications (API et client) dans la même région, puis l'addon Pos
 
 ### Coût et ressources
 
-Le sujet Ynov donne un plafond de 50 €/mois et recommande des conteneurs taille S avec un addon PostgreSQL Starter 512. Vérifier le simulateur Scalingo et le solde réel du voucher avant toute création de ressource ; consigner les montants constatés ci-dessous.
+Le sujet Ynov donne un plafond indicatif de 50 €/mois et recommande des conteneurs taille S avec un addon PostgreSQL Starter 512. Au tarif public actuel en région standard, deux conteneurs S (7,20 € chacun) et PostgreSQL Starter 512 (7,20 €) représentent environ **21,60 € HT par mois** (environ **25,92 € TTC** si une TVA française de 20 % s'applique). Le calcul suppose les trois ressources actives 30 jours, sans stockage excédentaire ni option supplémentaire ; Scalingo facture à la minute. Vérifier le solde et les conditions du voucher avant provisionnement.
 
-- Estimation mensuelle : à relever dans le simulateur avant création.
+- Estimation mensuelle : 21,60 € HT, à confirmer dans le simulateur avant création.
 - Coût réel : à relever dans Billing après déploiement.
 
 ## CI
