@@ -13,7 +13,7 @@ Gestionnaire de tâches minimal pour le TP de mise en production Ynov : React + 
 
 Prérequis : Docker Compose, Python 3.12 et Node.js 20.
 
-1. Copier `.env.example` vers `api/.env` et `client/.env` (ajuster les chemins si vous centralisez la configuration).
+1. Copier `api/.env.example` vers `api/.env`, puis `client/.env.example` vers `client/.env`.
 2. Lancer PostgreSQL : `docker compose up -d db`.
 3. API :
 
